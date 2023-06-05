@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+.body {
+    background-color: #eaeaea;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.boton button {
+    background: transparent;
+    padding: 8px 15px;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #00296d;
+    color: #00296d;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor1 {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ubicacion {
+    color: #2977d5;
+}
+
+.slogan {
+    width: 90%;
+    color: #00296d;
+}
+
+.slogan span {
+    color: #4a8bdb;
+}
+
+.slogan h3 {
+    font-size: 40px;
+}
+
+.boton2 button {
+    border: none;
+    background: #44c6e9;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 6px 6px 0px 0px #007be5;
+}
+
+.contenedor2 {
+    width: 45%;
+    border-radius: 50%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(0,212,255,1) 12%, rgb(0, 98, 255) 100%);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2 img {
+    width: 70%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu2 {
+    display: none !important;
+}
+
+@media (width < 700px) {
+    .main {
+        flex-direction: column-reverse;
+        margin: auto;
+        gap: 20px;
+    }
+
+    .contenedor1, .contenedor2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .boton2 {
+        padding-bottom: 20px;
+    }
+}
+
+@media (width < 815px) {
+
+    .main {
+        margin-top: 90px;
+    }
+
+    .menu1 {
+        display: none !important;
+    }
+    .menu2 {
+        display: block !important;
+    }
+}
